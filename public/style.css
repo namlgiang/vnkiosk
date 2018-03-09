@@ -245,7 +245,9 @@ body {
 }
 .section2 .container .impressions .impression {
   display: inline-block;
+  vertical-align: top;
   width: 150px;
+  margin: 0 20px;
 }
 .section2 .container .impressions .impression .circle {
   width: 100px;
