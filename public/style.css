@@ -86,7 +86,7 @@ body {
 .banner .container .hotline {
   cursor: pointer;
   float: right;
-  background: #3b8dff;
+  background: #b45bff;
   color: #fff;
   padding: 5px 30px;
   margin: 6px 20px;
@@ -94,7 +94,7 @@ body {
   transition: 200ms;
 }
 .banner .container .hotline:hover {
-  background: #2474e4;
+  background: #ff5b85;
 }
 .section {
   min-height: 300px;
@@ -276,13 +276,13 @@ body {
   background: url("img/video preview.png") center no-repeat;
   background-size: cover;
   color: #fff;
-  border: 3px solid #fff;
+  border: 3px solid #52d9ff;
   border-radius: 15px;
   overflow: hidden;
   padding: 13px 40px 17px;
   position: relative;
   cursor: pointer;
-  box-shadow: 0 10px 40px #00187140;
+  box-shadow: 0 10px 40px #001871ad;
   transition: 300ms;
 }
 .section2 .container .video > * {
@@ -302,6 +302,7 @@ body {
 }
 .section2 .container .video:hover {
   transform: scale(1.05);
+  border-color: #fff;
 }
 .section2 .container .video::before {
   content: "";
