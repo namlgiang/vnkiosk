@@ -1,0 +1,417 @@
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+}
+.video-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 11;
+  background: rgba(0, 0, 0, 0.9);
+}
+.video-popup iframe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 107vh;
+  height: 60vh;
+}
+.video-popup .close {
+  width: 30px;
+  height: 30px;
+  background: url(img/close.png) center no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 10vh;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+.video-popup:not(.active) {
+  display: none;
+}
+.banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+.banner .container {
+  background: #fff;
+  max-width: 800px;
+  margin: 0 auto;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  box-shadow: 0 0 50px #bbe6ff;
+  overflow: hidden;
+  font-size: 14px;
+}
+.banner .container .logo {
+  position: relative;
+  cursor: pointer;
+  float: left;
+  width: 40%;
+  min-width: 200px;
+  color: #fff;
+  padding: 13px 20px;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#42a9f8+0,39c4fe+100 */
+  background: #42a9f8;
+  /* Old browsers */
+  background: -moz-linear-gradient(left, #42a9f8 0%, #39c4fe 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #42a9f8 0%, #39c4fe 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #42a9f8 0%, #39c4fe 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#42a9f8', endColorstr='#39c4fe', GradientType=1);
+  /* IE6-9 */
+}
+.banner .container .logo:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 2px;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: url("img/mask 1.png") right no-repeat;
+  background-size: contain;
+}
+.banner .container .hotline {
+  cursor: pointer;
+  float: right;
+  background: #3b8dff;
+  color: #fff;
+  padding: 5px 30px;
+  margin: 6px 20px;
+  border-radius: 50px;
+  transition: 200ms;
+}
+.banner .container .hotline:hover {
+  background: #2474e4;
+}
+.section {
+  min-height: 300px;
+}
+.section4 {
+  color: #3b8dff;
+}
+.section4 .container {
+  padding: 50px 0;
+  max-width: 1000px;
+  width: 90%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.section4 .left {
+  float: left;
+  width: 50%;
+  box-sizing: border-box;
+  padding-right: 50px;
+}
+.section4 .left .title {
+  text-transform: uppercase;
+  font-size: 18px;
+}
+.section4 .left .text {
+  font-size: 14px;
+  margin-top: 20px;
+}
+.section4 .left .phone {
+  color: #ff428e;
+  font-size: 18px;
+  margin-top: 20px;
+  border-bottom: 2px solid #ff428e;
+  display: inline-block;
+  min-width: 200px;
+}
+.section4 .right {
+  float: right;
+  width: 50%;
+}
+.section4 .right .title {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.section4 .right .line {
+  margin-top: 10px;
+}
+.section4 .right input {
+  color: #3b8dff;
+  font-size: 14px;
+  padding: 10px 25px;
+  border: 1px solid #3b8dff;
+  border-radius: 30px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.section4 .right input:focus {
+  outline: none;
+}
+.section4 .right .first,
+.section4 .right .last {
+  width: 40%;
+  margin-right: 5px;
+}
+.section4 .right .order {
+  background: #024fcc;
+  color: #fff;
+  margin: 20px 0;
+  font-size: 14px;
+  display: inline-block;
+  padding: 10px 40px;
+  cursor: pointer;
+  border-radius: 30px;
+  box-shadow: 0 2px 4px #024fcc;
+  transition: 200ms;
+}
+.section4 .right .order:hover {
+  background: #317fff;
+}
+.section3 {
+  background: url('img/decor top.png') top center no-repeat, url('img/decor bottom.png') bottom center no-repeat;
+  background-color: #f4f6f9;
+  color: #3b8dff;
+}
+.section3 .container {
+  text-align: center;
+  padding: 80px 0 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.section3 .container > .title {
+  font-size: 24px;
+  margin-bottom: 60px;
+}
+.section3 .tile {
+  max-width: 450px;
+  height: 230px;
+  margin: 0 20px;
+  display: inline-block;
+  text-align: left;
+  overflow: hidden;
+}
+.section3 .tile .icon {
+  float: left;
+  height: 100%;
+  width: 100px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 20px;
+}
+.section3 .tile .title {
+  font-size: 18px;
+  height: 50px;
+}
+.section3 .tile .desc {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+.section2 {
+  background: url("img/video preview.png") center no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.section2 .container {
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  text-align: center;
+  font-weight: 400;
+  padding: 30px;
+}
+.section2 .container .title0 {
+  font-size: 16px;
+}
+.section2 .container .title1 {
+  font-size: 24px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.section2 .container .title2 {
+  font-size: 14px;
+}
+.section2 .container .impressions {
+  margin-top: 40px;
+}
+.section2 .container .impressions .impression {
+  display: inline-block;
+  width: 150px;
+}
+.section2 .container .impressions .impression .circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  border: 5px solid #fff;
+  box-sizing: border-box;
+  margin: 0 auto;
+  position: relative;
+}
+.section2 .container .impressions .impression .circle span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 24px;
+  font-weight: 600;
+}
+.section2 .container .impressions .impression .text {
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.section2 .container .video {
+  display: inline-block;
+  width: auto;
+  margin: 50px auto 0;
+  background: url("img/video preview.png") center no-repeat;
+  background-size: cover;
+  color: #fff;
+  border: 3px solid #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  padding: 13px 40px 17px;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 0 10px 40px #00187140;
+  transition: 300ms;
+}
+.section2 .container .video > * {
+  position: relative;
+  z-index: 2;
+}
+.section2 .container .video .icon {
+  width: 40px;
+  height: 40px;
+  background: url("img/icon video.png") center no-repeat;
+  background-size: contain;
+  margin: 0 auto 10px;
+}
+.section2 .container .video .text {
+  font-size: 14px;
+  font-weight: 600;
+}
+.section2 .container .video:hover {
+  transform: scale(1.05);
+}
+.section2 .container .video::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(0, 109, 255, 0.8);
+  z-index: 1;
+}
+.section2::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(68, 182, 255, 0.9);
+  z-index: 1;
+}
+.section1 .container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 100px auto 50px;
+  padding: 30px;
+  border-radius: 30px;
+  background: #8dffbb;
+  overflow: hidden;
+}
+.section1 .container .product-image {
+  float: left;
+  width: 35%;
+  height: 330px;
+  margin-right: 5%;
+  background: url("img/product.png") right no-repeat;
+  background-size: contain;
+}
+.section1 .container .text {
+  color: #01326e;
+  padding-top: 30px;
+  float: left;
+}
+.section1 .container .text .smallhead {
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 700;
+}
+.section1 .container .text .head {
+  margin-top: 5px;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 700;
+}
+.section1 .container .text .features {
+  font-size: 14px;
+  font-weight: 700;
+  overflow: hidden;
+  margin-top: 30px;
+}
+.section1 .container .text .features .feature {
+  float: left;
+  margin-right: 20px;
+}
+.section1 .container .text .features .feature::before {
+  content: "";
+  display: inline-block;
+  margin-right: 5px;
+  width: 20px;
+  height: 20px;
+  background: url("img/check.png") bottom no-repeat;
+  background-size: contain;
+}
+.section1 .container .text .intro {
+  font-size: 13px;
+  margin-top: 20px;
+  max-width: 340px;
+  font-weight: 700;
+}
+.section1 .container .text .button {
+  margin: 30px 10px 0 0;
+  font-size: 13px;
+  color: #fff;
+  background: #2f2f2f;
+  box-shadow: 0 3px 0 0 #329fff;
+  display: inline-block;
+  padding: 7px 35px;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: 200ms;
+}
+.section1 .container .text .button.order {
+  background: #00253d;
+}
+.section1 .container .text .button:hover {
+  background: #fff;
+  color: #024fcc;
+}
+.section1:before {
+  content: "";
+  display: block;
+  height: 5px;
+  background: #9dddfd;
+}
+.footer {
+  background: #012866;
+  color: #3b8dff;
+  padding: 40px;
+  text-align: center;
+  font-size: 14px;
+}
