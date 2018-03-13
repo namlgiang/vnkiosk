@@ -40,7 +40,7 @@ body {
         margin: 0 auto;
         border-bottom-left-radius: 8px;
         border-bottom-right-radius: 8px;
-        box-shadow: 0 0 50px #bbe6ff;
+        box-shadow: 0 0 50px #00cfff66;
         overflow: hidden;
         font-size: 14px;
 
@@ -149,6 +149,9 @@ body {
         }
         input:focus {
             outline: none;
+        }
+        input.error {
+            border-color: #ff3b3b;
         }
         .first, .last {
             width: 40%;
@@ -264,6 +267,7 @@ body {
                     margin-top: 20px;
                     font-size: 14px;
                     font-weight: 600;
+                    line-height: 22px;
                 }
             }
         }
