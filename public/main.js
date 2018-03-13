@@ -30,5 +30,7 @@ $(document).ready(function() {
             phone: $(".section4 .phone").val(),
             place: $(".section4 .place").val()
         };
+
+        $.post("/subscribe", data);
     });
 });
