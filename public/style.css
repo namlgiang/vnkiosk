@@ -135,8 +135,16 @@ body {
   float: right;
   width: 50%;
 }
+.section4 .right .form:not(.active),
+.section4 .right .thankyou:not(.active) {
+  display: none;
+}
 .section4 .right .title {
   margin-top: 40px;
+}
+.section4 .right .promotion {
+  color: #ff731b;
+  font-size: 13px;
   margin-bottom: 20px;
 }
 .section4 .right .line {
