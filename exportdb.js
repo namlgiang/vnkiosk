@@ -2,7 +2,7 @@ var key = process.argv[2];
 var fn = process.argv[3];
 var sqlite3 = require('sqlite3').verbose();
 db = new sqlite3.Database(key.indexOf(".db") == -1 ? key + '.db' : key);
-db.each("SELECT * FROM log", function(err, row) {
+db.each("SELECT * FROM contact", function(err, row) {
     console.log(row);
 });
 
