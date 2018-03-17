@@ -9,5 +9,5 @@ db.each("SELECT * FROM log", function(err, row) {
 if(fn == "clear-today") {
     var d = new Date();
     d.setHours(0);d.setMinutes(0);d.setSeconds(0);d.setMilliseconds(0);
-    db.run("DELETE FROM log WHERE time>=" + d.getTime());
+    db.run("DELETE FROM contact WHERE time>=" + d.getTime());
 }
