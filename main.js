@@ -7,9 +7,8 @@ app.use(express.static('public'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-var db = new sqlite.Database("contact.db");
-
 app.post("/subscribe", function(req, res) {
+    var db = new sqlite.Database("contact.db");
     db.serialize(function() {
         db.run("CREATE TABLE IF NOT EXISTS contact (first text, last text, email text, phone text, place text)");
         db.run("INSERT INTO contact (first, last, email, phone, place) VALUES ('"
