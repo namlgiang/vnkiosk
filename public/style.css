@@ -185,6 +185,9 @@ body {
 .section4 .right .order:hover {
   background: #317fff;
 }
+.section4 .right .order:active {
+  background: #3cd7ff;
+}
 .section3 {
   background: url('img/decor top.png') top center no-repeat, url('img/decor bottom.png') bottom center no-repeat;
   background-color: #f4f6f9;

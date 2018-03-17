@@ -31,6 +31,9 @@ $(document).ready(function() {
             place: $(".section4 .place").val()
         };
 
-        $.post("/subscribe", data);
+        $.post("/subscribe", data, function() {
+            $(".form").removeClass("active");
+            $(".thankyou").addClass("active");
+        });
     });
 });
